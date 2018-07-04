@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Principal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../_Css/home.css">
+        <link rel="stylesheet" type="text/css" href="../_Css/footer.css">
+        <link rel="stylesheet" type="text/css" href="../_Css/fotos.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../_JavaScript/home.js">
+            // <![CDATA[
+            $(document).ready(function () {
+                function filterPath(string) {
+                    return string
+                            .replace(/^\//, '')
+                            .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+                            .replace(/\/$/, '');
+                }
+                $('a[href*=#]').each(function () {
+                    if (filterPath(location.pathname) == filterPath(this.pathname)
+                            && location.hostname == this.hostname
+                            && this.hash.replace(/#/, '')) {
+                        var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                        var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                        if ($target) {
+                            var targetOffset = $target.offset().top;
+                            $(this).click(function () {
+                                $('html, body').animate({scrollTop: targetOffset}, 300);
+                                return false;
+                            });
+                        }
+                    }
+                });
+            });
+            // ]]></script>
+
+    </head>
+
+
+
+
+    <body>
+
+
+
+
+        <!-- Aqui foi cirado o menu   -->  
+
+        <div id="homes">
+
+            <!-- Imagem topo -->
+            <div id="imagem1">
+
+                <img id="icone"  src="../_imagens/Banner/assistenciaBanner1200.png">
+
+            </div>
+
+            <!--- Menu --->
+            <div id=menu>
+                <ul>
+                    <li onmouseover="mudaFoto('../_imagens/Banner/assistenciaBanner1200.png')" onmouseout="mudaFoto('../_imagens/Banner/assistenciaBanner1200.png')"><a id="homi" href="#homes" >Home</span></a></li>
+                    <li onmouseover="mudaFoto('../_imagens/Banner/bannerHome.png')" onmouseout="mudaFoto('../_imagens/Banner/assistenciaBanner1200.png')"><a href="#loja">Loja</span></a></li>
+                    <li onmouseover="mudaFoto('../_imagens/Banner/contatoBanner.png')" onmouseout="mudaFoto('../_imagens/Banner/assistenciaBanner1200.png')"><a href="#contato">Contato</span></a></li>
+                </ul>
+            </div>
+
+
+
+
+            <!-- Aqui está o corpo da página-->
+
+
+
+            <div id="home">
+
+                <div id="Titulo">Conheça nossos serviços</div>
+
+                <ul id="fotos">
+
+                    <li id="foto1"><span>Formatação de notebook's</span></li>
+                    <li id="foto2"><span>Up-grade de Pc's</span></li>
+                    <li id="foto3"><span>Instalação de anti-vírus</span></li>
+                    <li id="foto3"><span>windows 7</span></li>
+                    <li id="foto3"><span>Instalação de anti-vírus</span></li>
+                    <li id="foto3"><span>Instalação de anti-vírus</span></li>
+
+                </ul>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <!--    Aqui fica a parte da Loja da página  -->
+
+
+            <div id="loja">
+
+                <div id="Titulo">
+                    <h6 style="color: blue">J&J Informática</h6>
+
+
+
+
+                </div>
+                </br>
+
+            </div>
+
+
+
+            <!--    Aqui é o Footer da página  -->
+
+            <div id="contato">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div id="rodape">
+                    <hr>
+                    <p>Copyright &COPY; 2016 - by <a class="link_rodape" href="https://www.facebook.com/jeanheberth.souzavieira" target="_blank">Jean Heberth</a><br>
+                        <a id="facebook" href="http://facebook.com.br" target="_blank">Facebook</a> | 
+                        <a id="twitter" href="http://twitter.com.br" target="_blank">Twitter</a></p>
+                </div>
+
+            </div>
+    </body>
+
+</html>

@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    height: 1600px;
+    background-color: #ffffff;
+
+}
+#imagem1 {
+    margin: auto;
+    position: fixed;
+    
+}
+#menu{
+    width: 100%;
+    position: fixed;
+    background: #2D3F50;
+    margin-top: 140px;
+   
+}
+
+#menu ul {
+    width: 960px;
+    margin: 0 auto;
+    list-style: none;
+    margin-left: 450px;
+}
+#menu ul li {
+    float: left;
+    
+}
+#menu ul li:first-child a {
+    border-left: 0;
+}
+#menu ul li:last-child a {
+    border-right: 0;
+}
+#menu ul li a:hover {
+    background-color: #4aa6e0;
+}
+#menu ul li a {
+    padding: 15px 30px;
+    line-height: 50px;
+    border-left: 1px solid #464A4E;
+    border-right: 1px solid #0E3457;
+    text-decoration: none;
+    color: #fff;
+    
+}
+#Titulo{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 150px;
+}
+#home {
+    height: 700px;
+    width: 100%;
+    padding-top:90px;
+
+}
+#empresa {
+   
+    height: 100px;
+    width: 100%;
+    padding-top: 100px;
+}
+#contato {
+    height:400px;
+    width:100%;
+    padding-top: 240px;
+   }
+
+#creditos {
+    height:400px;
+    width:100%;
+    margin-top: 100px
+    
+}
+a:link, a:visited {
+    color:#696969;
+    text-decoration: none;
+}
+a:hover {
+    color: #CD5C5C;
+    text-decoration: none;
+}
